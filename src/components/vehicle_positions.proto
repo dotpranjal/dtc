@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+message VehiclePosition {
+  int32 vehicle_id = 1;
+  string trip_id = 2;
+  string route_id = 3;
+  double latitude = 4;
+  double longitude = 5;
+  int32 bearing = 6;
+  double speed = 7;
+  int64 timestamp = 8;
+  string vehicle_label = 9;
+  string vehicle_type = 10;
+  int32 occupancy_status = 11;
+  int32 delay = 12;
+  string stop_id = 13;
+  int32 stop_sequence = 14;
+  double stop_distance = 15;
+}
